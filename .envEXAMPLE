@@ -1,0 +1,6 @@
+# No quotes are required for anything here.
+DISCORD_TOKEN= #Bot Token
+GOOGLE_SHEETS_CREDENTIALS=credentials.json #From Google API
+SPREADSHEET_ID= #From URL in google sheets. Looks like a hash.
+DISCORD_CHANNEL= #Discord channel ID (Dev Mode)
+PLAYING= #Playing: status`
