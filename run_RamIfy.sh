@@ -1,4 +1,4 @@
 while true
 do
-    python3 RamIfy.py
+    /root/RamIfy-Server-and-Scripts/bin/python RamIfy.py
 done
