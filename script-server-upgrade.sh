@@ -32,7 +32,7 @@ echo "Cleaning temp files"
 rm -rf script-server 2>/dev/null || true
 rm -f script-server.zip 2>/dev/null || true
 echo "Downloading new script-server sources"
-wget https://github.com/bugy/script-server/releases/download/$1/script-server.zip
+wget https://github.com/bugy/script-server/releases/download/dev/script-server.zip
 echo "Exracting..."
 mkdir script-server
 unzip ./script-server.zip -d ./script-server
@@ -49,4 +49,4 @@ chown ${scriptServerUser}:${scriptServerUser} ${scriptServerInstall}
 echo "Starting service"
 service ${scriptServerService} start
 echo "Service status"
-service ${scriptServerService} status
+#service ${scriptServerService} status
