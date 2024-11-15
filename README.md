@@ -1,0 +1,2 @@
+# Scheduled-Discord-Messages
+A program created for FRC team 59 (RamTech) to pull information from a spreadsheet and send messages at specified intervals. It uses a google service account, and it's accompanying credentials.json file to sign in. Share the document (view) with the service account, and you can paste the "hash" from the URL in the .env file (rename .envEXAMPLE). I need to finish the spreadsheet before I publish an example, so just know that it has three collumns it pulls from: message content, time, and time zone.
