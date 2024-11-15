@@ -36,17 +36,11 @@ wget https://github.com/bugy/script-server/releases/download/dev/script-server.z
 echo "Exracting..."
 mkdir script-server
 unzip ./script-server.zip -d ./script-server
-echo "Service status"
-service ${scriptServerService} status
 echo "Stopping service"
 service ${scriptServerService} stop
 echo "Removing current sources."
 rm -rf "${scriptServerInstall}/.*"
 echo "Moving new source files"
 cp -r ./script-server/* ${scriptServerInstall}
-echo "Changing ownership of source files"
-chown ${scriptServerUser}:${scriptServerUser} ${scriptServerInstall}
 echo "Starting service"
 service ${scriptServerService} start
-echo "Service status"
-#service ${scriptServerService} status
